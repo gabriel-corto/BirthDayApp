@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My APP" />
+
+  <title>Calendário de Aniversariantes </title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Calendario de <br> Aniversarios <i class="fa-solid fa-calendar-day"></i> </h1>
+      <button class="openModal"> + Novo aniversário</button>
+    </header>
+    <main id="cards">
+    </main>
+
+    <main id="Modal" class="">
+      <div class="modal-header">
+        <h1>Novo Aniversário</h1>
+        <h1 class="closeModal"><i class="fa-solid fa-close"></i></h1>
+      </div>
+      <form class="form" action="#">
+        <div class="form-item">
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="ex: Gabriel">
+        </div>
+        <div class="form-item">
+          <label for="categoria">Categoria</label>
+          <input type="text" id="category" placeholder="ex: Amigo">
+        </div>
+        <div class="form-item">
+          <label for="date">Data de aniversário</label>
+          <input type="text" id="date" placeholder="ex: 4 de Abril">
+        </div>
+        <div class="form-item">
+          <p>ATENÇÃO! confirme os dados pois não poderá editar-lo.</p>
+        </div>
+        <div class="form-item">
+          <button class="submit" type="submit">
+            <i class="fa-solid fa-check"></i> Finalizar
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <main id="dialog" class="">
+      <p>Quer realmente Excluir estes Dados de Aniversário ?</p>
+      <div class="actions">
+        <button class="action action-no">Cancelar</button>
+        <button class="action action-yes">Sim</button>
+      </div>
+    </main>
+  </div>
+  <script src="js/Modal.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/createBirthDay.js"></script>
+</body>
+</html>
